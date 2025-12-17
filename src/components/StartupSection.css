@@ -1,0 +1,301 @@
+.startup {
+  background: #f6f9fc;
+  padding: 72px 6vw 90px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* text on top, cards below */
+.startup__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* top content */
+
+.startup__left {
+  max-width: 640px;
+}
+
+.startup__eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #635bff;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.startup__title {
+  font-size: 1.9rem;
+  line-height: 1.3;
+  color: #111827;
+  margin-bottom: 14px;
+}
+
+.startup__text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* cards grid below */
+
+.startup__right {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.05fr);
+  grid-auto-rows: minmax(0, auto);
+  gap: 18px;
+}
+
+/* base card */
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.18),
+    0 0 0 1px rgba(15, 23, 42, 0.04);
+  padding: 14px 16px 16px;
+  font-size: 0.78rem;
+  color: #111827;
+}
+
+/* Atlas card */
+
+.card--atlas {
+  grid-row: span 2;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 0.86rem;
+}
+
+.card__sub {
+  font-size: 0.76rem;
+  color: #6b7280;
+}
+
+.card__body--two-col {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 12px;
+}
+
+.card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #6b7280;
+}
+
+.card__list li {
+  margin-bottom: 6px;
+}
+
+.card__list--checks li::before {
+  content: "•";
+  display: inline-block;
+  margin-right: 6px;
+  color: #10b981;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.card__footer-text {
+  font-size: 0.76rem;
+  color: #4b5563;
+}
+
+/* badges */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+.badge--soft {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+/* QR / chat card */
+
+.card--qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card--qr__chat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.chat-bubble {
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.72rem;
+  max-width: 220px;
+}
+
+.chat-bubble--light {
+  background: #ecf0ff;
+  align-self: flex-start;
+}
+
+.chat-bubble--dark {
+  background: #111827;
+  color: #f9fafb;
+  align-self: flex-end;
+}
+
+.card--qr__box {
+  align-self: center;
+  text-align: center;
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 10px 12px 12px;
+  margin-bottom: 10px;
+}
+
+.card--qr__price {
+  font-weight: 700;
+  font-size: 0.96rem;
+}
+
+.card--qr__label {
+  font-size: 0.72rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.card--qr__code {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 4px;
+  background-image: linear-gradient(
+    45deg,
+    #111827 25%,
+    #f9fafb 25%,
+    #f9fafb 50%,
+    #111827 50%,
+    #111827 75%,
+    #f9fafb 75%,
+    #f9fafb 100%
+  );
+  background-size: 12px 12px;
+  border-radius: 6px;
+}
+
+.card--qr__scan {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.card__footer--qr {
+  margin-top: 0;
+}
+
+/* email card */
+
+.card--email__row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.card__label {
+  font-size: 0.72rem;
+  color: #6b7280;
+}
+
+.card--email__number {
+  font-weight: 600;
+}
+
+.card--email__meta {
+  font-size: 0.72rem;
+  color: #6b7280;
+}
+
+.card--email__brands {
+  display: flex;
+  gap: 6px;
+}
+
+.brand-pill {
+  font-size: 0.62rem;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+/* chart card */
+
+.card--chart__body {
+  margin-top: 8px;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 80px;
+}
+
+.chart-bar {
+  flex: 1;
+  background: linear-gradient(to top, #22c55e, #86efac);
+  border-radius: 4px;
+}
+
+.chart-axis {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.68rem;
+  color: #6b7280;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .startup {
+    padding: 56px 16px 70px;
+  }
+
+  .startup__right {
+    grid-template-columns: 1fr;
+  }
+
+  .card--atlas {
+    grid-row: auto;
+  }
+}
