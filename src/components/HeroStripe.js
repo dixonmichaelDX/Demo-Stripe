@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroStripe.css";
+import SmallLineChart from "./SmallLineChart";
 
 const HeroStripe = () => {
   return (
@@ -51,7 +52,9 @@ const HeroStripe = () => {
               </header>
 
               <div className="hs-dashboard__charts">
-                <div className="hs-chart hs-chart--large" />
+                <div className="hs-chart hs-chart--large">
+                  <SmallLineChart color="#4f46e5" />
+                </div>
 
                 <div className="hs-chart-grid">
                   <div className="hs-chart-card">
@@ -66,7 +69,9 @@ const HeroStripe = () => {
                         +32.8%
                       </span>
                     </div>
-                    <div className="hs-chart hs-chart--small" />
+                    <div className="hs-chart hs-chart--small">
+                      <SmallLineChart color="#16a34a" />
+                    </div>
                   </div>
 
                   <div className="hs-chart-card">
@@ -77,7 +82,9 @@ const HeroStripe = () => {
                         +32.1%
                       </span>
                     </div>
-                    <div className="hs-chart hs-chart--small hs-chart--purple" />
+                    <div className="hs-chart hs-chart--small hs-chart--purple">
+                      <SmallLineChart color="#a855f7" />
+                    </div>
                   </div>
                 </div>
               </div>
