@@ -207,8 +207,10 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-right">
-        <a className="nav-links">support</a>
-        <a className="btn btn-outline" style={{ color: "black" }}>
+        <a href="#" className="nav-links">
+          support
+        </a>
+        <a href="#" className="btn btn-outline" style={{ color: "black" }}>
           Sign in
         </a>
         <a href="#contact" className="btn btn-primary">
