@@ -4,12 +4,10 @@ import "./LowCodeSection.css";
 const LowCodeSection = () => {
   return (
     <section className="lowcode">
-      {/* angled separators to match Stripe band */}
       <div className="lowcode__skew lowcode__skew--top" />
       <div className="lowcode__skew lowcode__skew--bottom" />
 
       <div className="lowcode__inner">
-        {/* top text */}
         <header className="lowcode__header">
           <p className="lowcode__eyebrow">Launch with ease</p>
           <h2 className="lowcode__title">
@@ -23,8 +21,6 @@ const LowCodeSection = () => {
             your needs.
           </p>
         </header>
-
-        {/* three cards */}
         <div className="lowcode__cards">
           <article className="lc-card">
             <div className="lc-card__icon-row">
@@ -45,7 +41,9 @@ const LowCodeSection = () => {
               <div className="lc-avatar lc-avatar--outline">C</div>
               <div className="lc-avatar lc-avatar--ghost">✓</div>
             </div>
-            <h3 className="lc-card__title">Build with Stripe‑certified experts</h3>
+            <h3 className="lc-card__title">
+              Build with Stripe‑certified experts
+            </h3>
             <p className="lc-card__text">
               Work with a Stripe consulting partner that can design, build, and
               deploy your Stripe solution for you.
@@ -69,8 +67,6 @@ const LowCodeSection = () => {
             </p>
           </article>
         </div>
-
-        {/* bottom 3‑column row */}
         <div className="lowcode__bottom">
           <div className="lowcode__col">
             <h3>Ready to get started?</h3>

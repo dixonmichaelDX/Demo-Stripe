@@ -5,7 +5,6 @@
   padding: 120px 0 90px;
 }
 
-/* angled top/bottom strips like Stripe */
 .lowcode__skew {
   position: absolute;
   left: -10%;
@@ -26,8 +25,6 @@
   transform: translateY(55%) rotate(-4deg);
 }
 
-/* main content */
-
 .lowcode__inner {
   position: relative;
   z-index: 2;
@@ -38,8 +35,6 @@
   flex-direction: column;
   gap: 32px;
 }
-
-/* header */
 
 .lowcode__header {
   max-width: 520px;
@@ -67,8 +62,6 @@
   color: #4b5563;
 }
 
-/* cards */
-
 .lowcode__cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -78,15 +71,12 @@
 .lc-card {
   background: #ffffff;
   border-radius: 16px;
-  box-shadow:
-    0 18px 45px rgba(15, 23, 42, 0.12),
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12),
     0 0 0 1px rgba(15, 23, 42, 0.04);
   padding: 14px 16px 18px;
   font-size: 0.8rem;
   color: #111827;
 }
-
-/* first card pills */
 
 .lc-card__icon-row {
   display: flex;
@@ -116,8 +106,6 @@
   color: #4f46e5;
 }
 
-/* second card avatars */
-
 .lc-avatar-row {
   display: flex;
   gap: 6px;
@@ -146,8 +134,6 @@
 .lc-avatar--ghost {
   background: #111827;
 }
-
-/* third card mock */
 
 .lc-card__mock {
   border-radius: 12px;
@@ -183,8 +169,6 @@
   background: #111827;
 }
 
-/* card common text */
-
 .lc-card__title {
   font-size: 0.92rem;
   font-weight: 600;
@@ -196,8 +180,6 @@
   line-height: 1.6;
   color: #4b5563;
 }
-
-/* bottom row */
 
 .lowcode__bottom {
   margin-top: 14px;
@@ -221,8 +203,6 @@
   color: #4b5563;
   margin-bottom: 8px;
 }
-
-/* buttons and links */
 
 .lowcode__buttons {
   display: flex;
@@ -256,8 +236,6 @@
   font-size: 0.8rem;
   cursor: pointer;
 }
-
-/* responsive */
 
 @media (max-width: 960px) {
   .lowcode__cards {

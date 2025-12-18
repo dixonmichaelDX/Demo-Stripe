@@ -6,12 +6,17 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-brand">
-          <div className="logo footer-logo" style={{marginTop:"20px"}}>Stripe</div>
+          <div
+            className="logo footer-logo"
+            style={{ marginTop: "10px", color: "white" }}
+          >
+            Stripe
+          </div>
           <p>India (English)</p>
         </div>
         <div className="footer-columns">
           <div className="footer-col">
-           <h4>Products &amp; pricing</h4>
+            <h4>Products &amp; pricing</h4>
             <a>Pricing</a>
             <a>Atlas</a>
             <a>Authorization Boost</a>
@@ -38,7 +43,7 @@ const Footer = () => {
             <a>Terminal</a>
           </div>
           <div className="footer-col">
-           <h4>Solutions</h4>
+            <h4>Solutions</h4>
             <a>Enterprises</a>
             <a>Startups</a>
             <a>Agency &amp; commerce</a>
@@ -65,7 +70,7 @@ const Footer = () => {
             <a>Professional services</a>
           </div>
           <div className="footer-col">
-             <h4>Resources</h4>
+            <h4>Resources</h4>
             <a>Guides</a>
             <a>Customer stories</a>
             <a>Blog</a>
@@ -83,7 +88,7 @@ const Footer = () => {
             <a>Stripe Press</a>
             <a>Contact sales</a>
 
-             <h4>Support</h4>
+            <h4>Support</h4>
             <a>Get support</a>
             <a>Managed support plans</a>
 

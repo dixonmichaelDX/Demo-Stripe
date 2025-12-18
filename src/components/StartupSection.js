@@ -5,7 +5,6 @@ const StartupSection = () => {
   return (
     <section className="startup">
       <div className="startup__inner">
-        {/* TOP: TEXT CONTENT */}
         <div className="startup__left">
           <p className="startup__eyebrow">Built for growth</p>
           <h2 className="startup__title">Take your start‑up further, faster</h2>
@@ -17,10 +16,7 @@ const StartupSection = () => {
             and as far as you need.
           </p>
         </div>
-
-        {/* BOTTOM: CARDS GRID */}
         <div className="startup__right">
-          {/* Atlas card */}
           <article className="card card--atlas">
             <header className="card__header">
               <span className="badge">Atlas</span>
@@ -41,15 +37,21 @@ const StartupSection = () => {
                 <li>Open a bank account</li>
               </ul>
             </div>
-            <footer className="card__footer">
+            <div className="card__footer">
               <span className="badge badge--soft">Atlas</span>
-              <span className="card__footer-text">
+            </div>
+            <br />
+            <div>
+              <b className="card__footer-text" style={{ fontSize: "30px" }}>
                 Incorporate your company
-              </span>
-            </footer>
+              </b>
+            </div>
+            <div>
+              <p>
+                Form a legal entity, issue stock, and start accepting payments.
+              </p>
+            </div>
           </article>
-
-          {/* QR / chat card */}
           <article className="card card--qr">
             <div className="card--qr__chat">
               <div className="chat-bubble chat-bubble--light">
@@ -70,8 +72,6 @@ const StartupSection = () => {
               <span className="card__footer-text">Validate your idea</span>
             </footer>
           </article>
-
-          {/* Email card */}
           <article className="card card--email">
             <header className="card__header">
               <span className="card__title">Email</span>
@@ -90,8 +90,6 @@ const StartupSection = () => {
               </div>
             </div>
           </article>
-
-          {/* Chart card */}
           <article className="card card--chart">
             <header className="card__header">
               <span className="card__title">Cloud token</span>

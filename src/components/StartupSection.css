@@ -5,7 +5,6 @@
     sans-serif;
 }
 
-/* text on top, cards below */
 .startup__inner {
   max-width: 1120px;
   margin: 0 auto;
@@ -13,8 +12,6 @@
   flex-direction: column;
   gap: 32px;
 }
-
-/* top content */
 
 .startup__left {
   max-width: 640px;
@@ -42,8 +39,6 @@
   color: #4b5563;
 }
 
-/* cards grid below */
-
 .startup__right {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.05fr);
@@ -51,20 +46,15 @@
   gap: 18px;
 }
 
-/* base card */
-
 .card {
   background: #ffffff;
   border-radius: 16px;
-  box-shadow:
-    0 18px 45px rgba(15, 23, 42, 0.18),
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18),
     0 0 0 1px rgba(15, 23, 42, 0.04);
   padding: 14px 16px 16px;
   font-size: 0.78rem;
   color: #111827;
 }
-
-/* Atlas card */
 
 .card--atlas {
   grid-row: span 2;
@@ -123,8 +113,6 @@
   color: #4b5563;
 }
 
-/* badges */
-
 .badge {
   display: inline-flex;
   align-items: center;
@@ -140,8 +128,6 @@
   background: #eef2ff;
   color: #4f46e5;
 }
-
-/* QR / chat card */
 
 .card--qr {
   display: flex;
@@ -221,8 +207,6 @@
   margin-top: 0;
 }
 
-/* email card */
-
 .card--email__row {
   display: flex;
   justify-content: space-between;
@@ -257,8 +241,6 @@
   color: #4b5563;
 }
 
-/* chart card */
-
 .card--chart__body {
   margin-top: 8px;
 }
@@ -283,8 +265,6 @@
   font-size: 0.68rem;
   color: #6b7280;
 }
-
-/* responsive */
 
 @media (max-width: 768px) {
   .startup {

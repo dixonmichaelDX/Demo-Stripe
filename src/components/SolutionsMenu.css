@@ -1,0 +1,120 @@
+.sol-menu {
+  width: 620px;
+  max-width: 90vw;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18),
+    0 0 0 1px rgba(15, 23, 42, 0.06);
+  padding: 18px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.sol-section {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+}
+
+.sol-section--last {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sol-heading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.sol-row {
+  display: flex;
+  gap: 18px;
+}
+
+.sol-pill {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #111827;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sol-pill:hover {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+.sol-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.sol-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.sol-link {
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 3px 0;
+  font-size: 0.8rem;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.sol-link:hover {
+  color: #111827;
+}
+
+.nav-mega-wrapper {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  display: none;
+}
+
+.nav-item--has-menu:hover .nav-mega-wrapper {
+  display: block;
+}
+
+.nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: #111827;
+  cursor: pointer;
+}
+
+.nav-trigger__arrow {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-item--has-menu:hover .nav-trigger {
+  background: #f3f4f6;
+}
+
+.nav-item--has-menu:hover .nav-trigger__arrow {
+  transform: rotate(180deg);
+}

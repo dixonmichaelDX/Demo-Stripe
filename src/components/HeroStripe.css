@@ -1,0 +1,368 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  min-height: 100%;
+}
+
+.hs-simple {
+  background: #f6f9fc;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.hs-simple__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5vw;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.25fr);
+  gap: 56px;
+  width: 100%;
+}
+
+.hs-left {
+  align-self: flex-start;
+}
+
+.hs-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 0.75rem;
+  margin-bottom: 18px;
+  opacity: 0.3;
+}
+
+.hs-title {
+  font-size: 3.1rem;
+  line-height: 1.05;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.hs-title--gradient {
+  background: linear-gradient(135deg, #ef4444, #f97316, #9317c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hs-subtitle {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #4b5563;
+  max-width: 420px;
+  margin-bottom: 24px;
+}
+
+.hs-cta {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hs-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.hs-dashboard {
+  width: 700%;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 32px 90px rgba(15, 23, 42, 0.2),
+    0 0 0 1px rgba(15, 23, 42, 0.06);
+  padding: 18px 20px 20px;
+  font-size: 0.8rem;
+}
+
+.hs-dashboard__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hs-dashboard__brand {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.hs-dashboard__search {
+  width: 210px;
+  height: 20px;
+  border-radius: 999px;
+  background: #f3f4f6;
+}
+
+.hs-dashboard__body {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 12px 12px 14px;
+}
+
+.hs-dashboard__header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hs-dashboard__label {
+  font-size: 0.72rem;
+  color: #6b7280;
+}
+
+.hs-dashboard__value {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.hs-dashboard__help-text {
+  font-size: 0.68rem;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.hs-dashboard__mini {
+  text-align: right;
+}
+
+.hs-dashboard__mini-value {
+  display: block;
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.hs-dashboard__charts {
+  margin-top: 4px;
+}
+
+.hs-chart--large {
+  height: 90px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(129, 140, 248, 0.2),
+    rgba(129, 140, 248, 0.8),
+    rgba(129, 140, 248, 0.1)
+  );
+  margin-bottom: 10px;
+}
+
+.hs-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.hs-chart-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 10px 12px;
+  box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+.hs-dashboard__small-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0 6px;
+}
+
+.hs-dashboard__value--small {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.hs-dashboard__badge {
+  font-size: 0.68rem;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+.hs-dashboard__badge--green {
+  background: #ecfdf5;
+  color: #16a34a;
+}
+
+.hs-chart {
+  border-radius: 8px;
+  height: 46px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 0.2),
+    rgba(59, 130, 246, 0.8),
+    rgba(59, 130, 246, 0.1)
+  );
+}
+
+.hs-chart--small {
+  height: 40px;
+}
+
+.hs-chart--purple {
+  background-image: linear-gradient(
+    90deg,
+    rgba(147, 51, 234, 0.2),
+    rgba(147, 51, 234, 0.9),
+    rgba(147, 51, 234, 0.1)
+  );
+}
+
+.hs-phone {
+  position: absolute;
+  left: -15%;
+  bottom: 6%;
+  width: 210px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 30px 90px rgba(15, 23, 42, 0.4),
+    0 0 0 1px rgba(15, 23, 42, 0.06);
+  padding: 16px 16px 24px;
+  font-size: 0.75rem;
+}
+
+.hs-phone__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.hs-phone__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f97316, #facc15);
+}
+
+.hs-phone__product {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.hs-phone__price {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.hs-phone__primary-btn {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 0;
+  margin-bottom: 6px;
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+
+.hs-phone__link-btn {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 0.7rem;
+  color: #4b5563;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.hs-phone__field-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.7rem;
+  color: #4b5563;
+}
+
+.hs-phone__field-group input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 4px 6px;
+  margin-top: 3px;
+  font-size: 0.7rem;
+}
+
+.hs-phone__card-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4px;
+}
+
+.hs-phone__card-row--2 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.hs-phone__bottom-btn {
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 999px;
+  border: none;
+  padding: 6px 0;
+  font-size: 0.76rem;
+  font-weight: 600;
+  background: #111827;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .hs-simple__inner {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .hs-right {
+    justify-content: center;
+  }
+
+  .hs-dashboard {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .hs-phone {
+    left: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hs-title {
+    font-size: 2.3rem;
+  }
+
+  .hs-phone {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 20px;
+  }
+}

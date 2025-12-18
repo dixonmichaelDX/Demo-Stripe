@@ -4,12 +4,10 @@ import "./DeveloperSection.css";
 const DeveloperSection = () => {
   return (
     <section className="dev-band">
-      {/* angled background layers */}
       <div className="dev-band__skew dev-band__skew--top" />
       <div className="dev-band__skew dev-band__skew--bottom" />
 
       <div className="dev-band__inner">
-        {/* left content */}
         <div className="dev-band__left">
           <p className="dev-eyebrow">Designed for developers</p>
           <h2 className="dev-title">
@@ -25,8 +23,6 @@ const DeveloperSection = () => {
           </p>
           <button className="dev-cta">Read the docs ›</button>
         </div>
-
-        {/* right code card */}
         <div className="dev-band__right">
           <article className="code-card">
             <header className="code-card__top">
@@ -39,7 +35,7 @@ const DeveloperSection = () => {
             </header>
 
             <pre className="code-block">
-{`const stripe = require('stripe')('<sk_test_...>');
+              {`const stripe = require('stripe')('<sk_test_...>');
 
 await stripe.paymentIntents.create({
   amount: 2000,
@@ -64,7 +60,6 @@ await stripe.paymentIntents.create({
         </div>
       </div>
 
-      {/* bottom feature row */}
       <div className="dev-band__features">
         <div className="dev-feature">
           <div className="dev-feature__icon">⚙️</div>

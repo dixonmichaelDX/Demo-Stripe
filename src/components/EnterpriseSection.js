@@ -56,7 +56,6 @@ const EnterpriseSection = () => {
   return (
     <section className="enterprise">
       <div className="enterprise__inner">
-        {/* Left column - dynamic */}
         <div className="enterprise__left">
           <p className="enterprise__eyebrow">{data.eyebrow}</p>
           <h2 className="enterprise__title">{data.title}</h2>
@@ -75,8 +74,6 @@ const EnterpriseSection = () => {
             ))}
           </div>
         </div>
-
-        {/* Right column - card + tabs */}
         <div className="enterprise__right">
           <article className="enterprise-card">
             <header className="enterprise-card__header">
@@ -85,11 +82,11 @@ const EnterpriseSection = () => {
               </span>
               <span className="enterprise-card__icon">⌂</span>
             </header>
-
-            {/* image changes with active company */}
             <div
               className="enterprise-card__image"
-              style={{ backgroundImage: `linear-gradient(to top, rgba(12,74,110,0.88), rgba(12,74,110,0.15)), url(${data.image})` }}
+              style={{
+                backgroundImage: `linear-gradient(to top, rgba(12,74,110,0.88), rgba(12,74,110,0.15)), url(${data.image})`,
+              }}
             />
 
             <div className="enterprise-card__content">
